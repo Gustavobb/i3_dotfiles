@@ -44,11 +44,10 @@ fancy_echo () {
 	echo "$(tput setaf 11)#########"
 }
 
-read -p "Commit text: " -n 1 -r
+read -p "Commit text: " -n 9 -r
 fancy_echo "Navigating trought files"
 file_navigator 
 fancy_echo "Git push and commit"
-echo $REPLY
 git_integraion $REPLY
 
 
