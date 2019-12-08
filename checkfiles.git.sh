@@ -29,7 +29,7 @@ git_integraion () {
 
 	git add *
 	git commit -m "$1"
-	git push orgin master
+	git push origin master
 }
 
 # fancy echo just for fun
@@ -44,10 +44,12 @@ fancy_echo () {
 	echo "$(tput setaf 11)#########"
 }
 
-read -p "Commit text: " -n 9 -r
+echo "Commit text: "
+read message_log
 fancy_echo "Navigating trought files"
 file_navigator 
 fancy_echo "Git push and commit"
-git_integraion $REPLY
+echo $message_log
+git_integraion $message_log
 
 
