@@ -1,2 +1,2 @@
-# i3_files
-Files and config from i3
+# i3_dotfiles
+Here are my dotfiles for i3, repository still in production
