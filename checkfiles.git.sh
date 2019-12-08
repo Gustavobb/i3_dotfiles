@@ -49,7 +49,6 @@ read message_log
 fancy_echo "Navigating trought files"
 file_navigator 
 fancy_echo "Git push and commit"
-echo $message_log
 git_integraion $message_log
 
 
