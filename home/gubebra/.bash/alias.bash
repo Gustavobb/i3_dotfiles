@@ -2,7 +2,7 @@
 
 # General
 alias ls='ls --color=auto --group-directories-first'
-alias grep=grep --color='auto'
+alias grep="grep --color='auto'"
 
 # Python
 alias python='python3'
